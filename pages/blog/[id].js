@@ -1,17 +1,16 @@
 import Layout from '../../components/Layout';
 import React from 'react';
 import { timeConverter } from '../../helpers/utils/timeConverter';
-import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 export default function BlogDetail(props) {
   const { post } = props;
-  const router = useRouter();
-  const { pid } = router.query;
-
-  console.log('pid', pid);
 
   return (
     <Layout>
+      <Head>
+        <title>{post?.title} | Bilal Uçar</title>
+      </Head>
       <section className={`container py-5 blog-detail ${!post ? 'skeleton' : ''}`}>
         <div className="row">
           <div className="col-12">

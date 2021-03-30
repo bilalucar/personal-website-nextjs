@@ -1,10 +1,14 @@
 import Layout from '../components/Layout';
 import React from 'react';
 import BlogItem from '../components/BlogItem';
+import Head from 'next/head';
 
 export default function Blog({ posts }) {
   return (
     <Layout>
+      <Head>
+        <title>Blog | Bilal Uçar - Front-end Developer | JavaScript</title>
+      </Head>
       <section className="container py-5">
         <div className="row mb-3">
           <div className="col-12 col-lg-4">

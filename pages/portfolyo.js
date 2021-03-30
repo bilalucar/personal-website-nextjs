@@ -2,10 +2,14 @@ import Layout from '../components/Layout';
 import Link from 'next/link';
 import React from 'react';
 import { portfolioData } from '../mocks/portfolio';
+import Head from 'next/head';
 
 export default function Portfolyo() {
   return (
     <Layout>
+      <Head>
+        <title>Portfolyo | Bilal Uçar - Front-end Developer | JavaScript</title>
+      </Head>
       {portfolioData.map((section, index) => (
         <section className="container" key={`${index}-section`}>
           <div className="row pt-5">
