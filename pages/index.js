@@ -37,7 +37,7 @@ export default function Home() {
         data-wow-duration="1s"
         data-wow-delay="0.3s"
       >
-        <div className="row home__work py-5">
+        <div className="row home__work">
           <a href="/portfolyo/" className="home__work__item">
             <img className="img-fluid" src="/images/gittigidiyor.png" alt="GittiGidiyor" />
             <span>Detaylar</span>
