@@ -1,0 +1,52 @@
+/* all mixins */
+
+@mixin skeleton-base {
+  $from: $skeleton-from-color;
+  $to: scale-color($from, $lightness: -10%);
+
+  height: 1em;
+  width: 100%;
+  background: linear-gradient(
+                  -90deg,
+                  $from 0%,
+                  $to 50%,
+                  $from 100%
+  );
+  background-size: 400% 400%;
+  animation: pulse 1.2s ease-in-out infinite;
+  @keyframes pulse {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -135% 0%;
+    }
+  }
+}
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin to-tablet {
+  @media (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin from-tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
