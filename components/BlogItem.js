@@ -3,13 +3,7 @@ import Link from 'next/link';
 import { timeConverter } from '../helpers/utils/timeConverter';
 
 function BlogItem(props) {
-  const {
-    title,
-    created,
-    authorInfo: { fullName },
-    summary,
-    url,
-  } = props.item;
+  const { title, created, author, summary, url } = props.item;
   return (
     <div className="row justify-content-end mb-5 blog-item">
       <div
@@ -17,13 +11,13 @@ function BlogItem(props) {
         data-wow-duration="1s"
         data-wow-delay="0.3s"
       >
-        <Link href={`blog/${url}`}>
+        <Link href={`/blog/${url}`}>
           <a>
             <h4 className="blog-item__title">{title}</h4>
           </a>
         </Link>
         <div className="blog-item__meta">
-          {fullName}, {timeConverter(created._seconds)}
+          {author}, {timeConverter(created._seconds)}
         </div>
         <p>{summary}</p>
       </div>

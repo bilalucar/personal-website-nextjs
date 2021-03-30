@@ -2,6 +2,7 @@ import Layout from '../../components/Layout';
 import React from 'react';
 import { timeConverter } from '../../helpers/utils/timeConverter';
 import Head from 'next/head';
+import { getPost, getPostPaths } from '../../api/posts';
 
 export default function BlogDetail(props) {
   const { post } = props;
@@ -52,21 +53,21 @@ export default function BlogDetail(props) {
 }
 
 export const getStaticPaths = async () => {
-  const res = await fetch('https://us-central1-blog-269208.cloudfunctions.net/blog/api/v1/posts');
-  const posts = await res.json();
+  const res = await getPostPaths();
+  const response = await res.json();
 
-  const paths = posts.map(post => ({
-    params: { id: post.url },
+  const paths = response?.data.map(slug => ({
+    params: { id: slug },
   }));
 
   return { paths, fallback: false };
 };
 
 export async function getStaticProps({ params }) {
-  const res = await fetch(`https://us-central1-blog-269208.cloudfunctions.net/blog/api/v1/posts`);
-  const posts = await res.json();
+  const res = await getPost(params.id);
+  const response = await res.json();
 
-  if (!posts) {
+  if (!response.data) {
     return {
       notFound: true,
     };
@@ -74,7 +75,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
-      post: posts.find(item => item.url === params.id),
+      post: response.data,
     },
   };
 }

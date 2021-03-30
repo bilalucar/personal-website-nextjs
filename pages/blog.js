@@ -1,14 +1,11 @@
 import Layout from '../components/Layout';
 import React from 'react';
 import BlogItem from '../components/BlogItem';
-import Head from 'next/head';
+import { getPosts } from '../api/posts';
 
 export default function Blog({ posts }) {
   return (
     <Layout>
-      <Head>
-        <title>Blog | Bilal Uçar - Front-end Developer | JavaScript</title>
-      </Head>
       <section className="container py-5">
         <div className="row mb-3">
           <div className="col-12 col-lg-4">
@@ -21,7 +18,7 @@ export default function Blog({ posts }) {
             </h3>
           </div>
         </div>
-        {posts.sort((a, b) => b.created._seconds - a.created._seconds).length ? (
+        {posts.length ? (
           posts.map(post => <BlogItem item={post} key={post.id} />)
         ) : (
           <div className="skeleton">
@@ -63,10 +60,10 @@ export default function Blog({ posts }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`https://us-central1-blog-269208.cloudfunctions.net/blog/api/v1/posts`);
-  const posts = await res.json();
+  const res = await getPosts();
+  const response = await res.json();
 
-  if (!posts) {
+  if (!response.data) {
     return {
       notFound: true,
     };
@@ -74,7 +71,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts,
+      posts: response.data,
     },
   };
 }
