@@ -1,17 +1,11 @@
 import Layout from '../../components/Layout';
 import React from 'react';
 import { timeConverter } from '../../helpers/utils/timeConverter';
-import Head from 'next/head';
-import { getPost, getPostPaths } from '../../api/posts';
+import { getPost } from '../../api/posts';
 
-export default function BlogDetail(props) {
-  const { post } = props;
-
+function BlogDetail({ post }) {
   return (
     <Layout>
-      <Head>
-        <title>{post?.title} | Bilal Uçar</title>
-      </Head>
       <section className={`container py-5 blog-detail ${!post ? 'skeleton' : ''}`}>
         <div className="row">
           <div className="col-12">
@@ -52,22 +46,11 @@ export default function BlogDetail(props) {
   );
 }
 
-export const getStaticPaths = async () => {
-  const res = await getPostPaths();
+export async function getServerSideProps({ query }) {
+  const res = await getPost(query.id);
   const response = await res.json();
 
-  const paths = response?.data.map(slug => ({
-    params: { id: slug },
-  }));
-
-  return { paths, fallback: false };
-};
-
-export async function getStaticProps({ params }) {
-  const res = await getPost(params.id);
-  const response = await res.json();
-
-  if (!response.data) {
+  if (!response.data?.title) {
     return {
       notFound: true,
     };
@@ -79,3 +62,5 @@ export async function getStaticProps({ params }) {
     },
   };
 }
+
+export default BlogDetail;

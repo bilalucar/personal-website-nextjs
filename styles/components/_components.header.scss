@@ -2,21 +2,53 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   background-color: $header-background-color;
 
-  ul {
-    margin: 0;
-    padding: 0;
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
   }
 
-  li {
-    list-style: none;
+  &__toggle {
+    display: none;
+    background-color: $header-background-color;
+    padding: 16px 32px;
+    z-index: 1;
+
+    @include to-tablet {
+      display: block;
+    }
+  }
+
+  @include to-tablet {
+    justify-content: flex-start;
+  }
+
+  input {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    cursor: pointer;
   }
 
   &__menu {
     display: flex;
+    justify-content: center;
     margin: 0;
+    padding: 16px 32px;
+
+    @include to-tablet {
+      width: 100%;
+      flex-direction: column;
+      margin-top: -250px;
+      transition: 1.5s;
+
+      &--open {
+        margin-top: 0;
+      }
+    }
   }
 
   &__menu-item {
@@ -27,25 +59,10 @@
     height: 30px;
     color: $secondary-text-color;
 
-    svg {
-      margin-right: 0;
-
-      @include to-tablet {
-        font-size: 30px;
-      }
-
-      @include from-tablet {
-        margin-right: 10px;
-        display: none;
-      }
-    }
-
-    span {
-      display: none;
-
-      @include from-tablet {
-        display: block;
-      }
+    @include to-tablet {
+      font-size: 20px;
+      padding: 20px;
+      justify-content: center;
     }
   }
 }

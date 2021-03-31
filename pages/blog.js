@@ -3,7 +3,7 @@ import React from 'react';
 import BlogItem from '../components/BlogItem';
 import { getPosts } from '../api/posts';
 
-export default function Blog({ posts }) {
+function Blog({ posts }) {
   return (
     <Layout>
       <section className="container py-5">
@@ -59,7 +59,7 @@ export default function Blog({ posts }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await getPosts();
   const response = await res.json();
 
@@ -75,3 +75,5 @@ export async function getStaticProps() {
     },
   };
 }
+
+export default Blog;

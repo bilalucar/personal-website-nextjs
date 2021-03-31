@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "icon": "svgr icons -d components/icons --icon",
@@ -41,5 +41,8 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "sass": "^1.32.7"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^5.5.0"
   }
 }
