@@ -4,13 +4,24 @@ export const portfolioData = [
     data: [
       {
         img: {
+          src: '/images/sahibinden.png',
+          alt: 'Sahibinden.com',
+        },
+        position: 'Sr. Front-end Developer, Full Time',
+        description:
+          'sahibinden.com, gayrimenkul, vasıta, alışveriş ürünleri ve hizmetler gibi birçok kategoride ilan ve e-ticaret işlemlerinin yapıldığı online bir platformdur.',
+        date: '09/2021 – Devam Ediyor',
+        url: '',
+      },
+      {
+        img: {
           src: '/images/gittigidiyor.png',
           alt: 'Gittigidiyor',
         },
         position: 'Front-end Engineer, Full Time',
         description:
           'GittiGidiyor.com, eBay ailesinin bir üyesi olup, alıcılarla satıcıları buluşturan bir e-ticaret sitesidır.',
-        date: '11/2020 – Devam Ediyor',
+        date: '11/2020 – 09/2021',
         url: '',
       },
       {

@@ -39,19 +39,15 @@ export default function Home() {
       >
         <div className="row home__work">
           <a href="/portfolyo/" className="home__work__item">
-            <img className="img-fluid" src="/images/gittigidiyor.png" alt="GittiGidiyor" />
+            <img className="img-fluid" src="/images/sahibinden.png" alt="Sahibinden.com" />
             <span>Detaylar</span>
           </a>
-          <a href="/portfolyo/testinium#loadium" className="home__work__item">
-            <img className="img-fluid" src="/images/loadium.png" alt="Loadium" />
+          <a href="/portfolyo/" className="home__work__item">
+            <img className="img-fluid" src="/images/gittigidiyor.png" alt="GittiGidiyor" />
             <span>Detaylar</span>
           </a>
           <a href="/portfolyo/testinium#testinium" className="home__work__item">
             <img className="img-fluid" src="/images/testinium.png" alt="Testinium" />
-            <span>Detaylar</span>
-          </a>
-          <a href="/portfolyo/testinium#dashboard" className="home__work__item">
-            <img className="img-fluid" src="/images/dashboard.png" alt="Qa-Dashboard" />
             <span>Detaylar</span>
           </a>
           <a href="/portfolyo/teknovol" className="home__work__item">
