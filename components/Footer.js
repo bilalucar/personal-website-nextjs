@@ -19,11 +19,15 @@ function Footer() {
         </div>
         <div className="col-12 col-md-6">
           <p className="text-center text-md-left">
-            <a href="https://github.com/bilalucar" rel="nofollow">
+            <a target="_blank" href="https://api.whatsapp.com/send/?phone=905398651530&type=phone_number&app_absent=0" rel="nofollow">
+              WhatsApp
+            </a>
+            <span> • </span>
+            <a target="_blank" href="https://github.com/bilalucar" rel="nofollow">
               GitHub
             </a>
             <span> • </span>
-            <a href="https://www.linkedin.com/in/bilalucar" rel="nofollow">
+            <a target="_blank" href="https://www.linkedin.com/in/bilalucar" rel="nofollow">
               LinkedIn
             </a>
           </p>
