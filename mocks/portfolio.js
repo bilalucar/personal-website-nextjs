@@ -22,7 +22,7 @@ export const portfolioData = [
         description:
           'GittiGidiyor.com, eBay ailesinin bir üyesi olup, alıcılarla satıcıları buluşturan bir e-ticaret sitesidır.',
         date: '11/2020 – 09/2021',
-        url: '',
+        url: '/portfolyo/gittigidiyor',
       },
       {
         img: {

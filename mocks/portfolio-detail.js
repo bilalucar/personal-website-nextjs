@@ -90,7 +90,7 @@ export default function portfolioDetail(key) {
                 data-wow-delay="0s"
               >
                 <div>
-                  <img className="img-fluid" src="/images/teknovol.png" alt="Teknovol" />
+                  <img className="img-fluid" src="/images/teknovol.png" alt="Teknovol Logo" />
                 </div>
               </div>
               <div
@@ -142,7 +142,7 @@ export default function portfolioDetail(key) {
                 data-wow-delay="0s"
               >
                 <div>
-                  <img className="img-fluid" src="/images/testinium.png" alt="Testinium" />
+                  <img className="img-fluid" src="/images/testinium.png" alt="Testinium Logo" />
                 </div>
               </div>
               <div
@@ -176,7 +176,7 @@ export default function portfolioDetail(key) {
                 data-wow-delay="0s"
               >
                 <div>
-                  <img className="img-fluid" src="/images/loadium.png" alt="Loadium" />
+                  <img className="img-fluid" src="/images/loadium.png" alt="Loadium Logo" />
                 </div>
               </div>
               <div
@@ -208,7 +208,7 @@ export default function portfolioDetail(key) {
                 data-wow-delay="0s"
               >
                 <div>
-                  <img className="img-fluid" src="/images/dashboard.png" alt="QA Dashboard" />
+                  <img className="img-fluid" src="/images/dashboard.png" alt="QA Dashboard Logo" />
                 </div>
               </div>
               <div
@@ -226,6 +226,52 @@ export default function portfolioDetail(key) {
                   Bu projede Angular, TypeScript, SCSS, HTML, JavaScript, NG Zorro, Echarts ve Git
                   gibi teknolojileri/kütüphaneleri kullanarak projenin geliştirilmesinde etkin rol
                   oynadım.{' '}
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+      );
+    case 'gittigidiyor':
+      return (
+        <main role="main" className="home">
+          <section className="container">
+            <div id="gittigidiyor" className="row py-5">
+              <div
+                className="col-12 col-md-4 d-flex justify-content-center justify-content-md-start wow fadeInUp animated"
+                data-wow-duration="1s"
+                data-wow-delay="0s"
+              >
+                <div>
+                  <img className="img-fluid" src="/images/gittigidiyor.png" alt="Gittigidiyor Logo" />
+                </div>
+              </div>
+              <div
+                className="col-12 col-md-8 wow fadeInUp animated"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
+                <p>
+                  <a href="https://gittigidiyor.com" target="_blank" rel="noopener noreferrer">
+                    <b>GittiGidiyor.com</b>
+                  </a>
+                  , eBay ailesinin bir üyesi olup, alıcılarla satıcıları buluşturan bir e-ticaret sitesidır.
+                </p>
+
+                <p>
+                  Front-end tarafında bir yenilenmeye giden GittiGidiyor 'da Next JS, React, GraphQL, Styled Components, Jest, Storybook gibi teknolojileri kullanarak mikro app'ler oluşturulmasında destek oldum.
+                </p>
+
+                <p>
+                  Bu dönüşümde BFF katmanı için de Apollo Server kullanarak geliştirmelere katkıda bulundum.
+                </p>
+
+                <p>
+                  Bazı eski sayfalar için HTML, CSS, JS, PHP gibi teknolojileri kullanarak bug fix ve küçük boyutta geliştirmeler yaptım.
+                </p>
+
+                <p>
+                  Test ortamındaki deploymentlar ve uygulamalar için docker, kubernetes gibi teknolojileri kullandım.
                 </p>
               </div>
             </div>

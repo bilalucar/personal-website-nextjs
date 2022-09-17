@@ -43,15 +43,15 @@ export default function Home() {
             <span>Detaylar</span>
           </a>
           <a href="/portfolyo/" className="home__work__item">
-            <img className="img-fluid" src="/images/gittigidiyor.png" alt="GittiGidiyor" />
+            <img className="img-fluid" src="/images/gittigidiyor.png" alt="GittiGidiyor Logo" />
             <span>Detaylar</span>
           </a>
           <a href="/portfolyo/testinium#testinium" className="home__work__item">
-            <img className="img-fluid" src="/images/testinium.png" alt="Testinium" />
+            <img className="img-fluid" src="/images/testinium.png" alt="Testinium Logo" />
             <span>Detaylar</span>
           </a>
           <a href="/portfolyo/teknovol" className="home__work__item">
-            <img className="img-fluid" src="/images/teknovol.png" alt="Teknovol" />
+            <img className="img-fluid" src="/images/teknovol.png" alt="Teknovol Logo" />
             <span>Detaylar</span>
           </a>
         </div>
@@ -179,7 +179,7 @@ export default function Home() {
               QA Dashboard gibi SaaS ürünlerinin geliştirilmesinde etkin rol oynadım.
             </p>
 
-            <p>Şu anda Gittigidiyor.com 'da Front-end Engineer olarak çalışıyorum.</p>
+            <p>Şu anda sahibinden.com 'da Sr. Front-end Developer olarak çalışıyorum.</p>
           </div>
         </div>
       </section>
