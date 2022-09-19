@@ -23,7 +23,7 @@ export default function Home() {
             <p>Merhaba,</p>
 
             <p>
-              Ben Bilal Uçar. GittiGidiyor 'da Front-end Engineer olarak çalışıyorum. Yaptığım
+              Ben Bilal Uçar. sahibinden.com 'da Sr. Front-end Developer olarak çalışıyorum. Yaptığım
               projenin insanlar tarafından sevilip kullanıldığını görmek, "Abi adamlar yapmış!" gibi
               cümleler duymak en büyük motivasyon kaynağım.
             </p>
