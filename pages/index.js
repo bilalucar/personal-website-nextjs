@@ -24,8 +24,7 @@ export default function Home() {
 
             <p>
               Ben Bilal Uçar. sahibinden.com 'da Sr. Front-end Developer olarak çalışıyorum. Yaptığım
-              projenin insanlar tarafından sevilip kullanıldığını görmek, "Abi adamlar yapmış!" gibi
-              cümleler duymak en büyük motivasyon kaynağım.
+              projelerin insanlar tarafından sevilip kullanıldığını görmek en büyük motivasyon kaynağım.
             </p>
 
             <p>Çalıştığım bazı firma ve projeler:</p>
@@ -83,7 +82,7 @@ export default function Home() {
             <div className="row -small">
               <div className="col-12">
                 <p className="home__list-title bold">Yeteneklerim</p>
-                <div className="home__tags">
+                <p className="home__tags">
                   <span>#Angular</span>
                   <span>#JavaScript</span>
                   <span>#TypeScript</span>
@@ -93,21 +92,19 @@ export default function Home() {
                   <span>#SCSS</span>
                   <span>#Bootstrap</span>
                   <span>#jQuery</span>
+                  <span>#NextJS</span>
                   <span>#React</span>
-                  <span>#Redux</span>
-                  <span>#Ionic</span>
-                  <span>#Webpack</span>
                   <span>#WordPress</span>
                   <span>#Git</span>
                   <span>#JIRA</span>
                   <span>#Agile & Scrum</span>
-                </div>
+                </p>
               </div>
             </div>
             <div className="row -small">
               <div className="col-12">
                 <p className="home__list-title bold">Kullandığım Yazılımlar</p>
-                <div className="home__tags">
+                <p className="home__tags">
                   <span>#MacOS</span>
                   <span>#Apple Mail</span>
                   <span>#Webstorm</span>
@@ -122,7 +119,7 @@ export default function Home() {
                   <span>#GitHub</span>
                   <span>#GitLab</span>
                   <span>#Zsh</span>
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -153,14 +150,13 @@ export default function Home() {
 
             <p>
               Lisede biraz daha ilerletip WordPress, Blogger gibi platformlarla çalıştım. HTML, CSS
-              JavaScript gibi teknolojileri hazır tasarımlar üzerinde değişiklik yaparak devam
-              ettim.
+              JavaScript ve PHP ile hazır tasarımlar ve kodlar üzerinden değişiklikler yaparak öğrenmeye devam ettim.
             </p>
 
             <p>
               Üniversiteyi Süleyman Demirel Üniversitesi, Bilgisayar Mühendisliği bölümünde okudum.
-              Burada farklı programlama dilleri ve teknolojilerle uğraştım. Üniversite okurken
-              sektörle alakalı farklı eğitimlere ve etkinliklere katılmaya çalıştım.{' '}
+              Burada farklı programlama dilleri ve teknolojilerle çalıştım. Üniversite okurken
+              sektörle alakalı farklı eğitimlere ve etkinliklere katılmaya özen gösterdim.{' '}
             </p>
 
             <p>
@@ -179,7 +175,14 @@ export default function Home() {
               QA Dashboard gibi SaaS ürünlerinin geliştirilmesinde etkin rol oynadım.
             </p>
 
-            <p>Şu anda sahibinden.com 'da Sr. Front-end Developer olarak çalışıyorum.</p>
+            <p>
+              Testinium 'da yaklaşık 2 yıl çalıştıktan sonra GittiGidiyor ile e-ticaret sektörüne geçtim.
+              GittiGidiyor'da Next JS, React, GraphQL, Styled Components, Jest, Storybook gibi teknolojilerle tanıştım.
+              Bunun dışında Docker, kubernetes gibi konularda temel bilgi sahibi oldum.
+            </p>
+
+            <p>Yaklaşık 1 yıl sonrasında sahibinden.com 'da ödeme domaininde çalışmaya başladım.
+              Şu anda sahibinden.com 'da Sr. Front-end Developer olarak çalışmaktayım.</p>
           </div>
         </div>
       </section>
@@ -200,8 +203,8 @@ export default function Home() {
             data-wow-delay="0.3s"
           >
             <p>
-              Benimle iletişime geçmek istiyorsanız, aşağıdaki iletişim seçeneklerinden birini
-              kullanabilirsiniz. Size en kısa zamanda yanıt vermeye çalışacağım.
+              Sizlerle iletişim halinde olmayı, projelerinize katkı sağlamayı ve işbirliği yapmayı çok önemsiyorum.
+              Aşağıdaki kanalları kullanarak projeleriniz hakkında bilgi alabilir, fikirlerinizi paylaşabilir veya işbirliği önerisinde bulunabilirsiniz.
             </p>
             <p>
               <a href="mailto:ucarbilal@outlook.com">ucarbilal@outlook.com</a>
@@ -211,7 +214,7 @@ export default function Home() {
                 +90 539 865 1530
               </a>
             </p>
-            <p>Ataşehir/İstanbul</p>
+            <p>Yenişehir/MERSİN</p>
           </div>
         </div>
       </section>

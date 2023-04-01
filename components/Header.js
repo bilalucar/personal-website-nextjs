@@ -12,10 +12,10 @@ const menuItems = [
     text: 'Portfolyo',
     path: '/portfolyo',
   },
-  {
-    text: 'Blog',
-    path: '/blog',
-  },
+  // {
+  //   text: 'Blog',
+  //   path: '/blog',
+  // },
   {
     text: 'CV',
     path: '/files/bilal-ucar-cv.pdf',
