@@ -1,8 +1,45 @@
-import React from 'react';
-import Link from 'next/link';
-import { timeConverter } from '../helpers/utils/timeConverter';
+'use client';
 
-function BlogItem(props) {
+import Link from 'next/link';
+
+interface Props {
+  item: {
+    title: string;
+    created: {
+      _seconds: number;
+    };
+    author: string;
+    summary: string;
+    url: string;
+  };
+}
+
+export const timeConverter = (date: number) => {
+  if (!date) {
+    return '';
+  }
+
+  const created = new Date(date * 1000);
+
+  const months = [
+    'Oca',
+    'Şub',
+    'Mar',
+    'Nis',
+    'May',
+    'Haz',
+    'Tem',
+    'Ağu',
+    'Eyl',
+    'Eki',
+    'Kas',
+    'Ara',
+  ];
+
+  return `${created.getDate()} ${months[created.getMonth()]} ${created.getFullYear()}`;
+};
+
+const BlogItem = (props: Props) => {
   const { title, created, author, summary, url } = props.item;
   return (
     <div className="row justify-content-end mb-5 blog-item">
@@ -23,6 +60,6 @@ function BlogItem(props) {
       </div>
     </div>
   );
-}
+};
 
 export default BlogItem;

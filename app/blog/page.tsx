@@ -1,11 +1,10 @@
-import Layout from '../components/Layout';
-import React from 'react';
-import BlogItem from '../components/BlogItem';
-import { getPosts } from '../api/posts';
+import { getPosts } from '@/lib/api';
+import BlogItem from '@/components/BlogItem';
 
-function Blog({ posts }) {
+export default async function Blog() {
+  const res = await getPosts();
   return (
-    <Layout>
+    <main>
       <section className="container py-5">
         <div className="row mb-3">
           <div className="col-12 col-lg-4">
@@ -18,8 +17,8 @@ function Blog({ posts }) {
             </h3>
           </div>
         </div>
-        {posts.length ? (
-          posts.map(post => <BlogItem item={post} key={post.id} />)
+        {res?.posts?.length ? (
+          res.posts.map((post: any) => <BlogItem item={post} key={post.id} />)
         ) : (
           <div className="skeleton">
             <div className="row mb-5 blog-item">
@@ -55,25 +54,6 @@ function Blog({ posts }) {
           </div>
         )}
       </section>
-    </Layout>
+    </main>
   );
 }
-
-export async function getServerSideProps() {
-  const res = await getPosts();
-  const response = await res.json();
-
-  if (!response.data) {
-    return {
-      notFound: true,
-    };
-  }
-
-  return {
-    props: {
-      posts: response.data,
-    },
-  };
-}
-
-export default Blog;

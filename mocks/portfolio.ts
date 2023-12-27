@@ -10,8 +10,8 @@ export const portfolioData = [
         position: 'Sr. Front-end Developer, Full Time',
         description:
           'sahibinden.com, gayrimenkul, vasıta, alışveriş ürünleri ve hizmetler gibi birçok kategoride ilan ve e-ticaret işlemlerinin yapıldığı online bir platformdur.',
-        date: '09/2021 – Devam Ediyor',
-        url: '',
+        date: '09/2021 – 12/2023',
+        url: '/portfolyo/sahibinden.com',
       },
       {
         img: {
@@ -31,7 +31,7 @@ export const portfolioData = [
         },
         position: 'Front-end Developer, Full Time',
         description:
-          "Testinium, Loadium, QA Dashboard gibi ürünleri geliştiren aynı zamanda danışmanlık ve eğitim gibi hizmetleri de veren Saha Bilgi Teknolojileri 'nde Front-end Developer olarak çalıştım.",
+          'Testinium, test otomasyonu ve test yönetimi alanında hizmet veren bir yazılım şirketidir. ',
         date: '11/07/2018 – 11/2020',
         url: '/portfolyo/testinium',
       },
@@ -41,8 +41,7 @@ export const portfolioData = [
           alt: 'Teknovol',
         },
         position: 'Web Developer, Part Time',
-        description:
-          "Teknovol, bir Dijital İnteraktif Ajans ve Web Tasarım şirketidir. Üniversitedeyken part time olarak Teknovol 'de Web Developer pozisyonunda çalıştım.",
+        description: 'Teknovol bir Dijital İnteraktif Ajans ve Web Tasarım şirketidir.',
         date: '10/2016 – 07/2018',
         url: '/portfolyo/teknovol',
       },
@@ -57,8 +56,7 @@ export const portfolioData = [
           alt: 'Süleyman Demirel Üniversitesi',
         },
         position: 'Süleyman Demirel Üniversitesi, Bilgisayar Mühendisliği',
-        description:
-          '2014 yılında Isparta Süleyman Demirel Üniversitesi, Bilgisayar Mühendisliği bölümünü kazandım. 4 yıllık lisans eğitimimin ardından 2018 yılında mezun oldum.',
+        description: '',
         date: '09/2014 – 06/2018',
         url: '/portfolyo/sdu',
       },

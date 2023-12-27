@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+'use client';
 
 import Link from 'next/link';
 import SvgMenu from './icons/Menu';
+import { useState } from 'react';
 
 const menuItems = [
   {
@@ -26,7 +27,7 @@ const menuItems = [
   },
 ];
 
-function Header() {
+const Header = () => {
   const [isChecked, setIsChecked] = useState(false);
 
   return (
@@ -39,10 +40,8 @@ function Header() {
         <ul className={isChecked ? 'header__menu header__menu--open' : 'header__menu'}>
           {menuItems.map(item => (
             <li key={item.path}>
-              <Link href={item.path}>
-                <a className="header__menu-item">
-                  <span>{item.text}</span>
-                </a>
+              <Link href={item.path} className="header__menu-item">
+                <span>{item.text}</span>
               </Link>
             </li>
           ))}
@@ -50,6 +49,6 @@ function Header() {
       </nav>
     </div>
   );
-}
+};
 
 export default Header;

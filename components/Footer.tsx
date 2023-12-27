@@ -1,6 +1,6 @@
-import React from 'react';
+'use client';
 
-function Footer() {
+const Footer = () => {
   return (
     <footer
       className="container pt-5 wow fadeInUp animated"
@@ -18,8 +18,12 @@ function Footer() {
           <div className="seperator" />
         </div>
         <div className="col-12 col-md-6">
-          <p className="text-center text-md-left">
-            <a target="_blank" href="https://api.whatsapp.com/send/?phone=905398651530&type=phone_number&app_absent=0" rel="nofollow">
+          <p className="text-center text-md-start">
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send/?phone=905398651530&type=phone_number&app_absent=0"
+              rel="nofollow"
+            >
               WhatsApp
             </a>
             <span> • </span>
@@ -33,13 +37,13 @@ function Footer() {
           </p>
         </div>
         <div className="col-12 col-md-6">
-          <p className="text-center text-md-right">
+          <p className="text-center text-md-end">
             Copyright © {new Date().getFullYear()} Bilal Uçar.
           </p>
         </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

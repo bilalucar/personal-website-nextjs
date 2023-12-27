@@ -1,10 +1,7 @@
-import React from 'react';
-import Layout from '../components/Layout';
-
-export default function Home() {
+const Home = () => {
   return (
-    <Layout>
-      <section className="container py-5">
+    <main>
+      <section className="container mt-5 py-4 mt-md-0">
         <div className="row">
           <div
             className="col-12 col-md-4 d-flex justify-content-center justify-content-md-start wow fadeInUp animated"
@@ -23,8 +20,9 @@ export default function Home() {
             <p>Merhaba,</p>
 
             <p>
-              Ben Bilal Uçar. sahibinden.com 'da Sr. Front-end Developer olarak çalışıyorum. Yaptığım
-              projelerin insanlar tarafından sevilip kullanıldığını görmek en büyük motivasyon kaynağım.
+              Ben Bilal Uçar, bir front-end geliştiriciyim. HTML, CSS ve JavaScript gibi
+              teknolojileri kullanarak, kullanıcıların etkileşimde bulunmaktan keyif aldığı ve
+              işletmelerin hedeflerine ulaşmasına yardımcı olan web uygulamaları tasarlıyorum.
             </p>
 
             <p>Çalıştığım bazı firma ve projeler:</p>
@@ -36,7 +34,7 @@ export default function Home() {
         data-wow-duration="1s"
         data-wow-delay="0.3s"
       >
-        <div className="row home__work">
+        <div className="row home__work pb-2">
           <a href="/portfolyo/" className="home__work__item">
             <img className="img-fluid" src="/images/sahibinden.png" alt="Sahibinden.com" />
             <span>Detaylar</span>
@@ -55,7 +53,7 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <section className="container py-5">
+      <section className="container py-4">
         <div className="row">
           <div className="col-12 col-md-4">
             <h3
@@ -83,21 +81,20 @@ export default function Home() {
               <div className="col-12">
                 <p className="home__list-title bold">Yeteneklerim</p>
                 <p className="home__tags">
-                  <span>#Angular</span>
                   <span>#JavaScript</span>
                   <span>#TypeScript</span>
-                  <span>#ES6</span>
-                  <span>#HTML5</span>
+                  <span>#HTML</span>
                   <span>#CSS</span>
-                  <span>#SCSS</span>
-                  <span>#Bootstrap</span>
-                  <span>#jQuery</span>
-                  <span>#NextJS</span>
+                  <span>#Angular</span>
                   <span>#React</span>
+                  <span>#NextJS</span>
+                  <span>#GraphQL</span>
+                  <span>#jQuery</span>
                   <span>#WordPress</span>
+                  <span>#PHP</span>
+                  <span>#JSP</span>
+                  <span>#MySQL</span>
                   <span>#Git</span>
-                  <span>#JIRA</span>
-                  <span>#Agile & Scrum</span>
                 </p>
               </div>
             </div>
@@ -106,16 +103,18 @@ export default function Home() {
                 <p className="home__list-title bold">Kullandığım Yazılımlar</p>
                 <p className="home__tags">
                   <span>#MacOS</span>
-                  <span>#Apple Mail</span>
                   <span>#Webstorm</span>
                   <span>#Google Chrome</span>
-                  <span>#Safari</span>
                   <span>#Postman</span>
+                  <span>#Safari</span>
+                  <span>#Apple Mail</span>
+                  <span>#Notion</span>
                   <span>#Teams</span>
                   <span>#Slack</span>
                   <span>#Telegram</span>
                   <span>#WhatsApp</span>
-                  <span>#Spotify</span>
+                  <span>#Youtube Music</span>
+                  <span>#Figma</span>
                   <span>#GitHub</span>
                   <span>#GitLab</span>
                   <span>#Zsh</span>
@@ -125,7 +124,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container py-5">
+      <section className="container py-4">
         <div className="row">
           <div className="col-12 col-md-4">
             <h3
@@ -150,7 +149,8 @@ export default function Home() {
 
             <p>
               Lisede biraz daha ilerletip WordPress, Blogger gibi platformlarla çalıştım. HTML, CSS
-              JavaScript ve PHP ile hazır tasarımlar ve kodlar üzerinden değişiklikler yaparak öğrenmeye devam ettim.
+              JavaScript ve PHP ile hazır tasarımlar ve kodlar üzerinden değişiklikler yaparak
+              öğrenmeye devam ettim.
             </p>
 
             <p>
@@ -176,17 +176,24 @@ export default function Home() {
             </p>
 
             <p>
-              Testinium 'da yaklaşık 2 yıl çalıştıktan sonra GittiGidiyor ile e-ticaret sektörüne geçtim.
-              GittiGidiyor'da Next JS, React, GraphQL, Styled Components, Jest, Storybook gibi teknolojilerle tanıştım.
-              Bunun dışında Docker, kubernetes gibi konularda temel bilgi sahibi oldum.
+              Testinium 'da yaklaşık 2 yıl çalıştıktan sonra GittiGidiyor ile e-ticaret sektörüne
+              geçtim. GittiGidiyor'da Next JS, React, GraphQL, Styled Components, Jest, Storybook
+              gibi teknolojilerle tanıştım. Bunun dışında Docker, kubernetes gibi konularda temel
+              bilgi sahibi oldum.
             </p>
 
-            <p>Yaklaşık 1 yıl sonrasında sahibinden.com 'da ödeme domaininde çalışmaya başladım.
-              Şu anda sahibinden.com 'da Sr. Front-end Developer olarak çalışmaktayım.</p>
+            <p>
+              Ardindan sahibinden.com 'da Sr. Front-end Developer rolünde çalıştım. Ödeme takımı
+              projeleri başta olmak üzere farklı takımların projelerine destek sağladım. Özellikle
+              ödeme süreçlerinin geliştirilmesi ve güçlendirilmesi üzerine çalıştım. Ödeme
+              takımında, bir dizi ödeme sayfasında Masterpass entegrasyonlarını başarıyla
+              gerçekleştirdim. Ayrıca, Sanal Pos, İyzico, Asseco gibi önemli ödeme entegrasyonları
+              konusunda derin bir uzmanlık kazandım.
+            </p>
           </div>
         </div>
       </section>
-      <section className="container py-5">
+      <section className="container py-4">
         <div className="row">
           <div className="col-12 col-md-4">
             <h3
@@ -203,8 +210,9 @@ export default function Home() {
             data-wow-delay="0.3s"
           >
             <p>
-              Sizlerle iletişim halinde olmayı, projelerinize katkı sağlamayı ve işbirliği yapmayı çok önemsiyorum.
-              Aşağıdaki kanalları kullanarak projeleriniz hakkında bilgi alabilir, fikirlerinizi paylaşabilir veya işbirliği önerisinde bulunabilirsiniz.
+              Sizlerle iletişim halinde olmayı, projelerinize katkı sağlamayı ve işbirliği yapmayı
+              çok önemsiyorum. Aşağıdaki kanalları kullanarak projeleriniz hakkında bilgi alabilir,
+              fikirlerinizi paylaşabilir veya işbirliği önerisinde bulunabilirsiniz.
             </p>
             <p>
               <a href="mailto:ucarbilal@outlook.com">ucarbilal@outlook.com</a>
@@ -218,6 +226,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </Layout>
+    </main>
   );
-}
+};
+
+export default Home;

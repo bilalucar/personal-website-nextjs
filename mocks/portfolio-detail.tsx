@@ -1,4 +1,4 @@
-export default function portfolioDetail(key) {
+export default function portfolioDetail(key: string) {
   switch (key) {
     case 'sdu':
       return (
@@ -243,7 +243,11 @@ export default function portfolioDetail(key) {
                 data-wow-delay="0s"
               >
                 <div>
-                  <img className="img-fluid" src="/images/gittigidiyor.png" alt="Gittigidiyor Logo" />
+                  <img
+                    className="img-fluid"
+                    src="/images/gittigidiyor.png"
+                    alt="Gittigidiyor Logo"
+                  />
                 </div>
               </div>
               <div
@@ -255,23 +259,77 @@ export default function portfolioDetail(key) {
                   <a href="https://gittigidiyor.com" target="_blank" rel="noopener noreferrer">
                     <b>GittiGidiyor.com</b>
                   </a>
-                  , eBay ailesinin bir üyesi olup, alıcılarla satıcıları buluşturan bir e-ticaret sitesidır.
+                  , eBay ailesinin bir üyesi olup, alıcılarla satıcıları buluşturan bir e-ticaret
+                  sitesidır.
                 </p>
 
                 <p>
-                  Front-end tarafında bir yenilenmeye giden GittiGidiyor 'da Next JS, React, GraphQL, Styled Components, Jest, Storybook gibi teknolojileri kullanarak mikro app'ler oluşturulmasında destek oldum.
+                  Ürün girişlerinin geliştirildiği ekip içinde yer alarak, ürün girişlerini daha
+                  kullanıcı dostu ve sorunsuz hale getirme konusunda çalıştım. Bu süreçte Next.js,
+                  React, GraphQL, Styled Components, Jest ve Storybook gibi çağdaş teknolojileri
+                  kullanarak mikro uygulamaların oluşturulması ve yenilenmesinde önemli bir rol
+                  üstlendim. Ayrıca, ön yüz uygulamasının backend ile iletişimini geliştirmek
+                  amacıyla BFF (Back-For-Frontend) katmanında Apollo Server kullanarak çeşitli
+                  geliştirmeler gerçekleştirdim. Docker ve Kubernetes gibi konteynerleme
+                  teknolojilerine yönelik bilgi dağarcığımı genişleterek, projelerin daha verimli ve
+                  ölçeklenebilir bir şekilde yönetilmesine katkı sağladım. Bu deneyimler, hem teknik
+                  yeteneklerimi hem de çok çeşitli projelere katkı sağlama becerimi olgunlaştırmama
+                  olanak sağladı.
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+      );
+    case 'sahibinden.com':
+      return (
+        <main role="main" className="home">
+          <section className="container">
+            <div id="gittigidiyor" className="row py-5">
+              <div
+                className="col-12 col-md-4 d-flex justify-content-center justify-content-md-start wow fadeInUp animated"
+                data-wow-duration="1s"
+                data-wow-delay="0s"
+              >
+                <div>
+                  <img
+                    className="img-fluid"
+                    src="/images/sahibinden.png"
+                    alt="sahibinden.com Logo"
+                  />
+                </div>
+              </div>
+              <div
+                className="col-12 col-md-8 wow fadeInUp animated"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+              >
+                <p>
+                  <a href="https://sahibinden.com" target="_blank" rel="noopener noreferrer">
+                    <b>sahibinden.com</b>
+                  </a>
+                  , gayrimenkul, vasıta, alışveriş ürünleri ve hizmetler gibi birçok kategoride ilan
+                  ve e-ticaret işlemlerinin yapıldığı online bir platformdur.
                 </p>
 
                 <p>
-                  Bu dönüşümde BFF katmanı için de Apollo Server kullanarak geliştirmelere katkıda bulundum.
+                  Ödeme takımı projeleri başta olmak üzere farklı takımların projelerine destek
+                  sağladım. Özellikle ödeme süreçlerinin geliştirilmesi ve güçlendirilmesi üzerine
+                  çalıştım. Ödeme takımında, bir dizi ödeme sayfasında Masterpass entegrasyonlarını
+                  başarıyla gerçekleştirdim. Ayrıca, Sanal Pos, İyzico, Asseco gibi önemli ödeme
+                  entegrasyonları konusunda derin bir uzmanlık kazandım.
                 </p>
-
                 <p>
-                  Bazı eski sayfalar için HTML, CSS, JS, PHP gibi teknolojileri kullanarak bug fix ve küçük boyutta geliştirmeler yaptım.
+                  Teknoloji dönüşümünün bir parçası olarak Angular JS'den Angular'a geçiş sürecinde
+                  etkin bir rol üstlendim, şirketin kullanıcı arayüzünün modernizasyonunda aktif rol
+                  oynadım. Ayrıca, manuel ve otomasyon testlerini destekleyici uygulamalar
+                  tasarlayarak iş süreçlerini optimize etmeye ve kolaylaştırmaya katkı sağladım.
                 </p>
-
                 <p>
-                  Test ortamındaki deploymentlar ve uygulamalar için docker, kubernetes gibi teknolojileri kullandım.
+                  Aynı zamanda inşaat projeleri ve araç tedarik sistemi gibi farklı projelerin
+                  gelişiminde de etkin bir rol oynadım, bu projelerin başarılı bir şekilde
+                  tamamlanmasına yardımcı oldum. Deneyimlerim, hem teknik becerilerimi hem de iş
+                  süreçlerine olan katkımı güçlendirmeme olanak tanıdı.
                 </p>
               </div>
             </div>

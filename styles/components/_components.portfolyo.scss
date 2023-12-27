@@ -1,15 +1,14 @@
 /* portfolyo page css */
 
 .portfolyo {
-  &__item-content {
-    position: relative;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   &__read-more {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    margin-left: auto;
     font-size: 14px;
-    line-height: 2;
   }
 }
